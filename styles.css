@@ -7,7 +7,15 @@ body {
 }
 
 
+.footer {
 
+    bottom: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
 
 
 
@@ -21,7 +29,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin: 20px;
-    margin-left: -2px;
+    margin-left: -9px;
 }
 
 .btn:hover {
@@ -44,7 +52,7 @@ body {
     width: 80%;
     border-collapse: collapse;
     margin-top: 20px;
-    margin-left: 34px;
+    margin-left: 42px;
 }
 
 .grade-table th, .grade-table td {
@@ -53,6 +61,31 @@ body {
   text-align: center;
   font-size: 1rem;
 }
+
+.grade-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+
+/* Home Page Styles */
+.home__social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  color: royalblue;
+}
+
+
+
+.home__social-icon img {
+  width: 40px;
+  height: 40px;
+  
+}
+
+
 
 /* ✅ Responsive Fix */
 /* Already present inside media query */
