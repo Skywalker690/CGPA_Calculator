@@ -1,0 +1,74 @@
+
+
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    margin-left: -2px;
+}
+
+.btn:hover {
+    background-color: dodgerblue;
+}
+
+.main-box {
+    background-color: aliceblue;
+    padding: 40px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 600px;
+    width: 500px;
+    margin: 50px auto; /* Horizontally center */
+}
+
+.grade-table{
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 34px;
+}
+
+.grade-table th, .grade-table td {
+  border: 1px solid #999;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* ✅ Responsive Fix */
+/* Already present inside media query */
+@media (max-width: 600px) {
+  .main-box {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  
+  }
+
+  select {
+   
+    font-size: 1.5rem;
+   
+    box-sizing: border-box;
+  }
+}

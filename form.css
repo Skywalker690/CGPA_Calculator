@@ -1,0 +1,76 @@
+body {
+    background-color: whitesmoke;
+    margin: 50px;
+    font-family: sans-serif;
+}
+
+.cpaga-head {
+    text-align: center;
+}
+
+.mt {
+    margin-top: 130px;
+}
+
+.center-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+select {
+    height: 40px;
+    width: 200px;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align-last: center;
+}
+
+select option {
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: dodgerblue;
+}
+
+.main-box {
+    background-color: aliceblue;
+    padding: 40px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 600px;
+    width: 500px;
+    margin: 50px auto; /* Horizontally center */
+}
+
+/* ✅ Responsive Fix */
+/* Already present inside media query */
+@media (max-width: 600px) {
+  .main-box {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  
+  }
+
+  select {
+   
+    font-size: 1.5rem;
+   
+    box-sizing: border-box;
+  }
+}
