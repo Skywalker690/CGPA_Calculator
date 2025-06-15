@@ -49,10 +49,10 @@ body {
 }
 
 .grade-table{
-    width: 80%;
+    width: 80%; 
     border-collapse: collapse;
     margin-top: 20px;
-    margin-left: 42px;
+    margin-left: 43px;
 }
 
 .grade-table th, .grade-table td {
@@ -85,6 +85,19 @@ body {
   
 }
 
+table input {
+  width: 60px;
+  text-align: center;
+}
+.calculate-btn {
+  float: right;
+  margin-top: 10px;
+}
+.sgpa-value {
+  font-weight: bold;
+  color: #007bff;
+   margin-left: 5px;
+}
 
 
 /* ✅ Responsive Fix */
@@ -98,10 +111,9 @@ body {
   
   }
 
-  select {
-   
-    font-size: 1.5rem;
-   
-    box-sizing: border-box;
+  .grade-table {
+    width: 100%;
+    font-size: 0.9rem;
+    margin: auto;
   }
 }

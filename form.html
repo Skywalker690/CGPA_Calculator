@@ -3,25 +3,443 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CGPA Calculator</title>
+    <title>Semester Grade Report</title>
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    
-    <div class="main-box">
-
-
-        <div class="center-box">
-            <button class="btn" onclick="window.location.href='/index.html'" >Back →</button>
+    <div class="container">
+        <div class="button-section">
+            <button class="back-button" onclick="window.location.href='index.html'">Back</button>
         </div>
 
-        <div class="center-box">
-            <button class="btn" onclick="calculate()">Calculate →</button>
+        <!-- Semester 1 Table -->
+        <h2>Semester 1</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>SNo</th>
+                    <th>Subject</th>
+                    <th>Credit</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Linear Algebra and Calculus</td>
+                    <td>
+                        <select class="credit sem1-credit" onchange="updateAll()">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="grade sem1-grade" onchange="updateAll()">
+                            <option value="S">S</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="P">P</option>
+                            <option value="F" selected>F</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Engineering Physics A / Engineering Chemistry</td>
+                    <td>
+                        <select class="credit sem1-credit" onchange="updateAll()">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="grade sem1-grade" onchange="updateAll()">
+                            <option value="S">S</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="P">P</option>
+                            <option value="F" selected>F</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Engineering Mechanics / Engineering Graphics</td>
+                    <td>
+                        <select class="credit sem1-credit" onchange="updateAll()">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3" selected>3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="grade sem1-grade" onchange="updateAll()">
+                            <option value="S">S</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="P">P</option>
+                            <option value="F" selected>F</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Basics of Civil & Mechanical Engineering / Basics of Electrical & Electronics Engineering</td>
+                    <td>
+                        <select class="credit sem1-credit" onchange="updateAll()">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="grade sem1-grade" onchange="updateAll()">
+                            <option value="S">S</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="P">P</option>
+                            <option value="F" selected>F</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Engineering Physics Lab, Engineering Chemistry Lab</td>
+                    <td>
+                        <select class="credit sem1-credit" onchange="updateAll()">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="grade sem1-grade" onchange="updateAll()">
+                            <option value="S">S</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="P">P</option>
+                            <option value="F" selected>F</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Civil & Mechanical Workshop / Electrical & Electronics Workshop</td>
+                    <td>
+                        <select class="credit sem1-credit" onchange="updateAll()">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="grade sem1-grade" onchange="updateAll()">
+                            <option value="S">S</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="P">P</option>
+                            <option value="F" selected>F</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="sgpa-section">
+            <button class="clear-button" onclick="clearGrades(1)">Clear</button>
+            <button id="sgpa-button-sem1">Calculate SGPA: 0.00</button>
         </div>
 
+        <!-- Semester 2 Table -->
+        <h2>Semester 2</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>SNo</th>
+                    <th>Subject</th>
+                    <th>Credit</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Advanced Calculus and Differential Equations</td>
+                    <td>
+                        <select class="credit sem2-credit" onchange="updateAll()">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="grade sem2-grade" onchange="updateAll()">
+                            <option value="S">S</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="P">P</option>
+                            <option value="F" selected>F</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Engineering Physics B / Material Science</td>
+                    <td>
+                        <select class="credit sem2-credit" onchange="updateAll()">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="grade sem2-grade" onchange="updateAll()">
+                            <option value="S">S</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="P">P</option>
+                            <option value="F" selected>F</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Engineering Drawing / Mechanics of Solids</td>
+                    <td>
+                        <select class="credit sem2-credit" onchange="updateAll()">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3" selected>3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="grade sem2-grade" onchange="updateAll()">
+                            <option value="S">S</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="P">P</option>
+                            <option value="F" selected>F</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Basics of Electronics & Communication / Basics of Computer Engineering</td>
+                    <td>
+                        <select class="credit sem2-credit" onchange="updateAll()">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="grade sem2-grade" onchange="updateAll()">
+                            <option value="S">S</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="P">P</option>
+                            <option value="F" selected>F</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Material Science Lab, Computer Lab</td>
+                    <td>
+                        <select class="credit sem2-credit" onchange="updateAll()">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="grade sem2-grade" onchange="updateAll()">
+                            <option value="S">S</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="P">P</option>
+                            <option value="F" selected>F</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Electronics Workshop / Computer Workshop</td>
+                    <td>
+                        <select class="credit sem2-credit" onchange="updateAll()">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="grade sem2-grade" onchange="updateAll()">
+                            <option value="S">S</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="P">P</option>
+                            <option value="F" selected>F</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="sgpa-section">
+            <button class="clear-button" onclick="clearGrades(2)">Clear</button>
+            <button id="sgpa-button-sem2">Calculate SGPA: 0.00</button>
+        </div>
 
+        <!-- CGPA Indicator -->
+        <div class="cgpa-section">
+            <p id="cgpa-text">Total CGPA: 0.00</p>
+        </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        // Define grade points
+        const gradePoints = {
+            'S': 10, 'A+': 9, 'A': 8.5, 'B+': 8, 'B': 7.5, 'C+': 7, 'C': 6.5, 'D': 6, 'P': 5, 'F': 0
+        };
+
+        // Function to calculate SGPA for a specific semester
+        function calculateSGPA(semester) {
+            let totalCredits = 0;
+            let totalGradePoints = 0;
+
+            // Select the appropriate elements based on semester
+            const credits = document.querySelectorAll(`.sem${semester}-credit`);
+            const grades = document.querySelectorAll(`.sem${semester}-grade`);
+
+            // Loop through each row
+            for (let i = 0; i < credits.length; i++) {
+                const credit = parseInt(credits[i].value);
+                const grade = grades[i].value;
+                const points = gradePoints[grade] || 0;
+
+                totalCredits += credit;
+                totalGradePoints += credit * points;
+            }
+
+            // Calculate SGPA
+            const sgpa = totalCredits > 0 ? (totalGradePoints / totalCredits) : 0;
+            document.getElementById(`sgpa-button-sem${semester}`).textContent = `Calculate SGPA: ${sgpa.toFixed(2)}`;
+
+            return { sgpa, totalCredits };
+        }
+
+        // Function to calculate CGPA
+        function calculateCGPA() {
+            const sem1Data = calculateSGPA(1);
+            const sem2Data = calculateSGPA(2);
+
+            const totalCredits = sem1Data.totalCredits + sem2Data.totalCredits;
+            const weightedSGPA = (sem1Data.sgpa * sem1Data.totalCredits) + (sem2Data.sgpa * sem2Data.totalCredits);
+            const cgpa = totalCredits > 0 ? (weightedSGPA / totalCredits).toFixed(2) : '0.00';
+
+            document.getElementById('cgpa-text').textContent = `Total CGPA: ${cgpa}`;
+        }
+
+        // Function to clear grades for a specific semester
+        function clearGrades(semester) {
+            const grades = document.querySelectorAll(`.sem${semester}-grade`);
+            grades.forEach(grade => {
+                grade.value = 'F';
+            });
+            calculateCGPA();
+        }
+
+        // Function to update SGPA and CGPA on any change
+        function updateAll() {
+            calculateCGPA();
+        }
+
+        // Initial calculation for both semesters and CGPA on page load
+        calculateCGPA();
+    </script>
 </body>
 </html>
