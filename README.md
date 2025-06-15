@@ -1,6 +1,6 @@
 # 🎓 CGPA Calculator
 
-An interactive web-based **CGPA Calculator** built with **HTML**, **CSS**, and **JavaScript** to help students calculate their Semester Grade Point Average (SGPA) and Cumulative Grade Point Average (CGPA) with ease.
+A user-friendly **CGPA Calculator** built using **HTML**, **CSS**, and **JavaScript** to help students calculate their SGPA and CGPA quickly and accurately.
 
 🔗 [Live Demo](https://skywalker690.github.io/CGPA_Calculator/)
 
@@ -8,47 +8,47 @@ An interactive web-based **CGPA Calculator** built with **HTML**, **CSS**, and *
 
 ## 💡 Features
 
-- Add multiple subjects with credit and grade input
-- Real-time SGPA and CGPA calculation
-- Clean, responsive UI
-- Easy-to-use and mobile-friendly
-
----
-
-## 📦 Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript (Vanilla JS)
+- Add subjects with credit and grade input
+- Automatically calculate SGPA and CGPA
+- Clean, responsive, and mobile-friendly UI
+- Real-time updates without page reloads
 
 ---
 
 ## 🚀 How to Use
 
-1. Open the [Live Site](https://skywalker690.github.io/CGPA_Calculator/).
-2. Enter subject details:
-   - **Subject Name**
-   - **Credits**
-   - **Grade** (e.g., S, A+, B, etc.)
+1. Open the [live site](https://skywalker690.github.io/CGPA_Calculator/).
+2. For each subject:
+   - Enter **Subject Name**
+   - Enter **Credits**
+   - Select **Grade** from the dropdown
 3. Click **Add Subject**.
-4. After adding all subjects, click **Calculate SGPA/CGPA**.
+4. Click **Calculate SGPA / CGPA** when all subjects are added.
 
 ---
 
-## 🧮 Grade to Point Mapping
+## 📊 Grade to Point Mapping
 
-| Grade | Points |
-|-------|--------|
-| S     | 10     |
-| A+    | 9.5    |
-| A     | 9      |
-| B+    | 8.5    |
-| B     | 8      |
-| C     | 7      |
-| D     | 6      |
-| F     | 0      |
+| Grade | Grade Point |
+|-------|-------------|
+| S     | 10.0        |
+| A+    | 9.0         |
+| A     | 8.5         |
+| B+    | 8.0         |
+| B     | 7.5         |
+| C+    | 7.0         |
+| C     | 6.5         |
+| D     | 6.0         |
+| P     | 5.5         |
 
 ---
 
+## 🧑‍💻 Built With
+
+- **HTML5** – page structure
+- **CSS3** – styling
+- **JavaScript (Vanilla)** – logic & interactivity
+
+---
 
 
