@@ -549,9 +549,219 @@
                 </tr>
             </tbody>
         </table>
-        <div class="sgpa-section">
+            <div class="sgpa-section">
             <button class="clear-button" onclick="clearGrades(2)">Clear</button>
             <button class="sgpa-button" id="sgpa-button-sem2">Calculate SGPA: 0.00</button>
+        </div>
+
+
+        <h2>Semester 3</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>SNo</th>
+                    <th>Subject</th>
+                    <th>Credit</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Data Structures and Algorithms</td>
+                    <td>
+                        <select class="credit sem3-credit" onchange="updateAll()">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="grade sem3-grade" onchange="updateAll()">
+                            <option value="S">S</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="P">P</option>
+                            <option value="F" selected>F</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Object Oriented Programming </td>
+                    <td>
+                        <select class="credit sem3-credit" onchange="updateAll()">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="grade sem3-grade" onchange="updateAll()">
+                            <option value="S">S</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="P">P</option>
+                            <option value="F" selected>F</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Computer Organization and Architecture</td>
+                    <td>
+                        <select class="credit sem3-credit" onchange="updateAll()">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3" >3</option>
+                            <option value="4"selected>4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="grade sem3-grade" onchange="updateAll()">
+                            <option value="S">S</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="P">P</option>
+                            <option value="F" selected>F</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Number Theory, Transforms and Queueing Theory</td>
+                    <td>
+                        <select class="credit sem3-credit" onchange="updateAll()">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3" >3</option>
+                            <option value="4" selected >4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="grade sem3-grade" onchange="updateAll()">
+                            <option value="S">S</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="P">P</option>
+                            <option value="F" selected>F</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Universal Human Values - II</td>
+                    <td>
+                        <select class="credit sem3-credit" onchange="updateAll()">
+                            <option value="1" >1</option>
+                            <option value="2" selected>2</option>
+                            <option value="3">3</option>
+                            <option value="4" >4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="grade sem3-grade" onchange="updateAll()">
+                            <option value="S">S</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="P">P</option>
+                            <option value="F" selected>F</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Data Structures Lab</td>
+                    <td>
+                        <select class="credit sem3-credit" onchange="updateAll()">
+                            <option value="1" >1</option>
+                            <option value="2" selected>2</option>
+                            <option value="3" >3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="grade sem3-grade" onchange="updateAll()">
+                            <option value="S">S</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="P">P</option>
+                            <option value="F" selected>F</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td> Object Oriented Programming Lab</td>
+                    <td>
+                        <select class="credit sem3-credit" onchange="updateAll()">
+                            <option value="1" >1</option>
+                            <option value="2" selected>2</option>
+                            <option value="3" >3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="grade sem3-grade" onchange="updateAll()">
+                            <option value="S">S</option>
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="P">P</option>
+                            <option value="F" selected>F</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+        <div class="sgpa-section">
+            <button class="clear-button" onclick="clearGrades(3)">Clear</button>
+            <button class="sgpa-button" id="sgpa-button-sem3">Calculate SGPA: 0.00</button>
         </div>
 
         <div class="cgpa-section">
@@ -560,14 +770,7 @@
     </div>
 
     <footer class="footer">
-        <div class="home__social-icons">
-            <a href="https://www.linkedin.com/in/sanjo-k-siby/" target="_blank" class="home__social-icon" aria-label="LinkedIn">
-                <img src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="LinkedIn icon" loading="lazy">
-            </a>
-            <a href="https://github.com/Skywalker690" target="_blank" class="home__social-icon" aria-label="GitHub">
-                <img src="https://img.icons8.com/ios-filled/50/github.png" alt="GitHub icon" loading="lazy">
-            </a>
-        </div>
+        
         <p>© 2025 CGPA Calculator. All rights reserved.</p>
     </footer>
 

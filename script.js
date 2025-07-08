@@ -34,8 +34,9 @@ function calculateSGPA(semester) {
 function calculateCGPA() {
     const sem1Data = calculateSGPA(1);
     const sem2Data = calculateSGPA(2);
-    const totalCredits = sem1Data.totalCredits + sem2Data.totalCredits;
-    const weightedSGPA = (sem1Data.sgpa * sem1Data.totalCredits) + (sem2Data.sgpa * sem2Data.totalCredits);
+    const sem3Data = calculateSGPA(3);
+    const totalCredits = sem1Data.totalCredits + sem2Data.totalCredits + sem3Data.totalCredits;
+    const weightedSGPA = (sem1Data.sgpa * sem1Data.totalCredits) + (sem2Data.sgpa * sem2Data.totalCredits) + (sem3Data.sgpa * sem3Data.totalCredits);
     const cgpa = totalCredits > 0 ? (weightedSGPA / totalCredits).toFixed(2) : '0.00';
     document.getElementById('cgpa-text').textContent = `Total CGPA: ${cgpa}`;
 }
