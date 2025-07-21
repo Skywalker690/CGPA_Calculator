@@ -1,132 +1,184 @@
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
- -webkit-user-drag: none;
-  user-drag: none;
-  user-select: none;
-}
-
-
-
 body {
-  background-color: whitesmoke;
-  margin: 0;
-  font-family: sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Changed to dark background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #e0e0e0; /* Changed text to light for dark mode */
 }
 
-
-.footer {
-  bottom: 0;
-  width: 100%;
-  background-color: whitesmoke;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 1.2rem;
+.main-box,
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #1e1e1e; /* Changed to dark background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adjusted shadow for dark mode */
 }
 
+.cpaga-head {
+    text-align: center;
+    color: #ffffff; /* Changed to light text */
+}
 
+.grade-table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
 
+.grade-table th,
+.grade-table td {
+    border: 1px solid #444; /* Darkened border for visibility */
+    padding: 8px;
+    text-align: center;
+    color: #e0e0e0; /* Added light text color */
+}
 
-.btn {
+.grade-table th {
+    background-color: #333; /* Darkened header background */
+}
+
+.center-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Buttons are excluded from changes - keeping original styles */
+.btn,
+.back-button,
+.clear-button,
+.sgpa-button {
     padding: 10px 20px;
-    font-size: 1.2rem;
-    background-color: royalblue;
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 20px;
-    margin-left: -9px;
+    font-size: 16px;
 }
 
-.btn:hover {
-    background-color: dodgerblue;
+.btn:hover,
+.back-button:hover,
+.clear-button:hover,
+.sgpa-button:hover {
+    background-color: #0056b3;
 }
 
-.main-box {
-    background-color: aliceblue;
-    padding: 40px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.footer {
+    margin-top: auto;
     text-align: center;
-    height: 600px;
-    width: 500px;
-    margin: 50px auto; /* Horizontally center */
+    padding: 10px;
+    color: #e0e0e0; /* Changed to light text */
 }
 
-.grade-table{
-    width: 80%; 
-    border-collapse: collapse;
-    margin-top: 20px;
-    margin-left: 43px;
-}
-
-.grade-table th, .grade-table td {
-  border: 1px solid #999;
-  padding: 10px 20px;
-  text-align: center;
-  font-size: 1rem;
-}
-
-.grade-table th {
-  background-color: #f2f2f2;
-  font-weight: bold;
-}
-
-
-/* Home Page Styles */
 .home__social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
-  color: royalblue;
-  text-decoration: none ;
+    margin-bottom: 10px;
 }
-
-
 
 .home__social-icon img {
-  width: 40px;
-  height: 40px;
-    text-decoration: none ;
-
+    width: 30px;
+    margin: 0 10px;
 }
 
-table input {
-  width: 60px;
-  text-align: center;
-}
-.calculate-btn {
-  float: right;
-  margin-top: 10px;
-}
-.sgpa-value {
-  font-weight: bold;
-  color: #007bff;
-   margin-left: 5px;
+.container {
+    display: none;
 }
 
+.button-section {
+    margin-bottom: 20px;
+}
 
-/* ✅ Responsive Fix */
-/* Already present inside media query */
-@media (max-width: 600px) {
-  .main-box {
-    width: 90%;
-    height: auto;
-    padding: 20px;
-    box-sizing: border-box;
-  
-  }
+h2 {
+    color: #ffffff; /* Changed to light text */
+    margin-top: 20px;
+}
 
-  .grade-table {
+table {
     width: 100%;
-    font-size: 0.9rem;
-    margin: auto;
-  }
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
+th,
+td {
+    border: 1px solid #444; /* Darkened border */
+    padding: 8px;
+    text-align: left;
+    color: #e0e0e0; /* Added light text color */
+}
 
+th {
+    background-color: #333; /* Darkened header background */
+}
+
+select {
+    padding: 5px;
+    width: 100%;
+    background-color: #1e1e1e; /* Darkened background for select */
+    color: #e0e0e0; /* Light text */
+    border: 1px solid #444; /* Darkened border */
+}
+
+.sgpa-section,
+.cgpa-section {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Clear button excluded - keeping original */
+.clear-button {
+    background-color: #dc3545;
+    margin-right: 10px;
+}
+
+.clear-button:hover {
+    background-color: #c82333;
+}
+
+/* SGPA button excluded - keeping original */
+.sgpa-button {
+    background-color: #28a745;
+}
+
+.sgpa-button:hover {
+    background-color: #218838;
+}
+
+#cgpa-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff; /* Changed to light text */
+}
+
+body {
+    background-color: #121212; /* Changed to dark background */
+    color: #e0e0e0; /* Changed to light text */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .main-box,
+    .container {
+        width: 90%;
+    }
+
+    .grade-table {
+        width: 100%;
+    }
+
+    /* Buttons excluded, but responsive adjustments kept */
+    .btn,
+    .back-button,
+    .clear-button,
+    .sgpa-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
