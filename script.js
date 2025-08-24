@@ -54,3 +54,42 @@ function updateAll() {
 }
 
 calculateCGPA();
+
+// Subject data structure for each semester
+const semesterSubjects = {
+    1: [
+        'Discrete Mathematics',
+        'Engineering Chemistry and Advanced Materials',
+        'Python for Engineers',
+        'Introduction to Computing Essentials',
+        'Basics of Electrical and Electronics Engineering',
+        'Technical English and Soft Skills'
+    ],
+    2: [
+        'Linear Algebra and Probability',
+        'Fundamentals of Engineering Physics',
+        'Essential foundations of Digital Logic',
+        'Computer Programming in C & Shell Scripting',
+        'Computer Hardware Essentials',
+        'Engineering Economics'
+    ],
+    3: [
+        'Number Theory, Transforms and Queueing Theory',
+        'Data Structures and Algorithms',
+        'Object Oriented Programming',
+        'Computer Organization and Architecture',
+        'Universal Human Values - II',
+        'Essentials of Office Automation',
+        'Data Structures Lab',
+        'Object Oriented Programming Lab'
+    ]
+};
+
+function openAttendance(semester) {
+    const subjects = semesterSubjects[semester];
+    const subjectsParam = encodeURIComponent(JSON.stringify(subjects));
+    const url = `attendance.html?semester=${semester}&subjects=${subjectsParam}`;
+    window.location.href = url;
+}
+
+
