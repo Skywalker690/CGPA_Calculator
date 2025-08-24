@@ -1,29 +1,31 @@
-
 body {
+    background-color: #121212;
+    color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #121212; /* Changed to dark background */
+    padding: 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    color: #e0e0e0; /* Changed text to light for dark mode */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .main-box,
 .container {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
     width: 90%;
     max-width: 800px;
-    margin: 20px auto;
-    background: #1e1e1e; /* Changed to dark background */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adjusted shadow for dark mode */
+    margin: 20px auto 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .cpaga-head {
     text-align: center;
-    color: #ffffff; /* Changed to light text */
+    color: #ffffff;
 }
 
 .grade-table {
@@ -34,14 +36,14 @@ body {
 
 .grade-table th,
 .grade-table td {
-    border: 1px solid #444; /* Darkened border for visibility */
+    border: 1px solid #444;
     padding: 8px;
     text-align: center;
-    color: #e0e0e0; /* Added light text color */
+    color: #e0e0e0;
 }
 
 .grade-table th {
-    background-color: #333; /* Darkened header background */
+    background-color: #333;
 }
 
 .center-box {
@@ -49,32 +51,77 @@ body {
     margin-top: 20px;
 }
 
-/* Buttons are excluded from changes - keeping original styles */
-.btn,
-.back-button,
-.clear-button,
-.sgpa-button {
-    padding: 10px 20px;
+/* Proceed Button - Blue */
+.btn {
     background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Clear Button - Red */
+.clear-button {
+    background-color: #dc3545;
+    margin-right: 10px;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-button:hover {
+    background-color: #c82333;
+}
+
+/* SGPA Button - Green */
+.sgpa-btn,
+.sgpa-button {
+    background-color: #28a745;
     color: white;
     border: none;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
 }
 
-.btn:hover,
-.back-button:hover,
-.clear-button:hover,
+.sgpa-btn:hover,
 .sgpa-button:hover {
-    background-color: #0056b3;
+    background-color: #218838;
+}
+
+/* Attendance Button - Purple */
+.attendance-button,
+.attendance-btn {
+    padding: 10px 20px;
+    background-color: #9933FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.attendance-button:hover,
+.attendance-btn:hover {
+    background-color: #5a32a3;
 }
 
 .footer {
     margin-top: auto;
     text-align: center;
     padding: 10px;
-    color: #e0e0e0; /* Changed to light text */
+    color: #e0e0e0;
 }
 
 .home__social-icons {
@@ -95,34 +142,35 @@ body {
 }
 
 h2 {
-    color: #ffffff; /* Changed to light text */
+    color: #ffffff;
     margin-top: 20px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 th,
 td {
-    border: 1px solid #444; /* Darkened border */
-    padding: 8px;
-    text-align: left;
-    color: #e0e0e0; /* Added light text color */
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+    color: #e0e0e0;
 }
 
 th {
-    background-color: #333; /* Darkened header background */
+    background-color: #333;
 }
 
-select {
+select,
+input[type="number"] {
     padding: 5px;
-    width: 100%;
-    background-color: #1e1e1e; /* Darkened background for select */
-    color: #e0e0e0; /* Light text */
-    border: 1px solid #444; /* Darkened border */
+    border-radius: 5px;
+    border: none;
+    background-color: #2b2b2b;
+    color: white;
 }
 
 .sgpa-section,
@@ -131,35 +179,10 @@ select {
     margin-top: 10px;
 }
 
-/* Clear button excluded - keeping original */
-.clear-button {
-    background-color: #dc3545;
-    margin-right: 10px;
-}
-
-.clear-button:hover {
-    background-color: #c82333;
-}
-
-/* SGPA button excluded - keeping original */
-.sgpa-button {
-    background-color: #28a745;
-}
-
-.sgpa-button:hover {
-    background-color: #218838;
-}
-
 #cgpa-text {
     font-size: 18px;
     font-weight: bold;
-    color: #ffffff; /* Changed to light text */
-}
-
-body {
-    background-color: #121212; /* Changed to dark background */
-    color: #e0e0e0; /* Changed to light text */
-    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #ffffff;
 }
 
 /* Responsive Styles */
@@ -173,12 +196,19 @@ body {
         width: 100%;
     }
 
-    /* Buttons excluded, but responsive adjustments kept */
     .btn,
     .back-button,
     .clear-button,
-    .sgpa-button {
+    .sgpa-button,
+    .attendance-button,
+    .attendance-btn {
         width: 100%;
         margin-top: 10px;
+    }
+
+    .attendance-button,
+    .attendance-btn {
+        width: 100%;
+        margin: 10px 0 0 0;
     }
 }
